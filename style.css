@@ -103,7 +103,7 @@ footer p{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    height: 300px;
+    height: 350px;
     background-color: #FFF;
     border-radius: 15px;
     box-shadow: 0 0 7px #444;
@@ -112,22 +112,14 @@ footer p{
 
 .join_form h3{
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .join_form p{
     text-align: center;
 }
 
-.join_form input[type='text']{
-    width: 170px;
-    height: 40px;
-    padding-left: 10px;
-    border: 1px solid black;
-    border-radius: 5px;
-}
-
-.join_form input[type='password']{
+.join_form input[type='text'], input[type='password']{
     width: 345px;
     height: 40px;
     padding-left: 10px;
@@ -135,9 +127,26 @@ footer p{
     border-radius: 5px;
 }
 
+#input_id{
+    width: 240px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.id_check{
+    width: 100px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #222;
+    color: #FFF;
+}
+
 .join_form input[type='submit'], input[type='reset']{
     width: 100px;
-    height: 30px;
+    height: 40px;
     background-color: #FFF;
     border: 1px solid black;
     border-radius: 5px;

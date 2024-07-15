@@ -45,7 +45,8 @@
     <div class="join_form">
         <h3>회원가입</h3>
         <form action="join.php" method="post">
-            <p><input type="text" name="id" placeholder="아이디"> <input type="text" name="name" placeholder="이름"></p>
+            <p><input type="text" name="id" placeholder="아이디" id="input_id"> <button class="id_check">중복 확인</button></p>
+            <p><input type="text" name="name" placeholder="이름"></p>
             <p><input type="password" name="password" placeholder="비밀번호"></p>
             <p><input type="password" placeholder="비밀번호 확인"></p>
             <p><input type="submit" value="회원가입"> <input type="reset" value="취소" id="reset"></p>
