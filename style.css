@@ -96,3 +96,48 @@ footer p{
     padding-left: 20px;
     line-height: 49px;
 }
+
+.join_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 300px;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 0 7px #444 ;
+}
+
+.join_form h3{
+    text-align: center;
+    padding: 20px;
+}
+
+.join_form p{
+    text-align: center;
+}
+
+.join_form input[type='text']{
+    width: 170px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.join_form input[type='password']{
+    width: 345px;
+    height: 40px;
+    padding-left: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.join_form input[type='submit'], input[type='reset']{
+    width: 100px;
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid black;
+    border-radius: 5px;
+}
