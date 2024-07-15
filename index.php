@@ -48,7 +48,7 @@
             <p><input type="text" name="id" placeholder="아이디"> <input type="text" name="name" placeholder="이름"></p>
             <p><input type="password" name="password" placeholder="비밀번호"></p>
             <p><input type="password" placeholder="비밀번호 확인"></p>
-            <p><input type="submit" value="회원가입"> <input type="reset" value="취소"></p>
+            <p><input type="submit" value="회원가입"> <input type="reset" value="취소" id="reset"></p>
         </form>
     </div>
 
