@@ -34,7 +34,7 @@
     <section>
         <div class="textBox2">
             <h3>Welcome to my Book Market</h3>
-            <p>현재 접속 시간 : ??:?? PM</p>
+            <p>현재 접속 시간 : <?= date("H:i:s") ?></p>
         </div>
     </section>
 
