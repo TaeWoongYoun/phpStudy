@@ -17,21 +17,39 @@ join_submit.addEventListener('click', () => {
     const pw = document.querySelector('.input_pw')
     const pw_ck = document.querySelector('.input_pw_ck')
 
+    if (id.value == ''){
+        alert('아이디를 입력해주세요.')
+        id.focus();
+        return false;
+    }
+
     if (id.value.length < 4 || id.value.length > 12){
         alert('아이디를 4자 이상 12 이하로 입력해주세요.')
         id.focus();
         return false;
     }
 
-    if (name.value.length < 4 || name.value.length > 12){
-        alert('이름을 4자 이상 12 이하로 입력해주세요.')
-        id.focus();
+    if (name.value == ''){
+        alert('이름을 입력해주세요.')
+        name.focus();
         return false;
     }
 
-    if (userpw.value == ''){
-        alert('비밀번호를 입력해주세요');
+    if (name.value.length < 4 || name.value.length > 12){
+        alert('이름을 4자 이상 12 이하로 입력해주세요.')
+        name.focus();
+        return false;
+    }
+
+    if (pw.value == ''){
+        alert('비밀번호를 입력해주세요.')
         pw.focus();
+        return false;
+    }
+
+    if (pw_ck.value == ''){
+        alert('비밀번호가 일치하지 않습니다. 비밀번호를 확인해주세요');
+        pw_ck.focus();
         return false;
     }
 
