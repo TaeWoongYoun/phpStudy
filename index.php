@@ -43,6 +43,15 @@
         <p class="copy">ⓒBookMarket</p>
     </footer>
 
+    <div class="login_form">
+        <h3>로그인</h3>
+        <form action="login.php" method="post">
+            <p><input type="text" name="userid" id="userid" placeholder="아이디"></p>
+            <p><input type="password" name="userpw" id="userpw" placeholder="비밀번호"></p>
+            <p><input type="submit" value="로그인" class="login_submit"><input type="reset" value="취소" class="login_reset"></p>
+        </form>
+    </div>
+
     <div class="join_form">
         <h3>회원가입</h3>
         <form action="join.php" method="post">

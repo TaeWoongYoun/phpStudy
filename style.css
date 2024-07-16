@@ -97,6 +97,45 @@ footer p{
     line-height: 49px;
 }
 
+.login_form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 250px;
+    background-color: #FFF;
+    border-radius: 15px;
+    box-shadow: 0 0 7px #444;
+    display: none;
+}
+
+.login_form h3{
+    text-align: center;
+    padding: 15px;
+}
+
+.login_form p{
+    text-align: center;
+}
+
+#userid, #userpw{
+    width: 345px;
+    padding-left: 10px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.login_submit, .login_reset{
+    width: 100px;
+    height: 30px;
+    background-color: #FFF;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin: 10px;
+}
+
 .join_form{
     position: absolute;
     top: 50%;
@@ -144,7 +183,7 @@ footer p{
     color: #FFF;
 }
 
-.join_form input[type='submit'], input[type='reset']{
+.join_form input[type='submit'], #reset{
     width: 100px;
     height: 40px;
     background-color: #FFF;

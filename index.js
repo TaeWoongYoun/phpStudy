@@ -2,13 +2,26 @@ const join = document.querySelector('.join');
 const reset = document.querySelector('#reset');
 const join_submit = document.querySelector('.join_submit');
 const join_form = document.querySelector('.join_form');
+const login_form = document.querySelector('.login_form');
+const login = document.querySelector('.login');
+const login_reset = document.querySelector('.login_reset');
 
 join.addEventListener('click', () =>{
     join_form.style.display = 'block'
+    login_form.style.display = 'none'
 })
 
 reset.addEventListener('click', () =>{
     join_form.style.display = 'none'
+})
+
+login.addEventListener('click', () =>{
+    login_form.style.display = 'block'
+    join_form.style.display = 'none'
+})
+
+login_reset.addEventListener('click', () =>{
+    login_form.style.display = 'none'
 })
 
 join_submit.addEventListener('click', (event) => {
