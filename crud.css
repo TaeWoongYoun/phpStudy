@@ -123,6 +123,20 @@ th{
     background-color: #eee;
 }
 
+.calender{
+    margin: auto;
+    width: 500px;
+}
+
+.calender th, .calender td{
+    height: 60px;
+    font-size: 22px;
+}
+
+.calender th:hover, .calender td:hover{
+    background-color: lightgoldenrodyellow;
+}
+
 footer{
     position: absolute;
     bottom: 0;
