@@ -59,8 +59,13 @@ nav > ul > li{
     text-align: center;
     font-size: 18px;
     font-weight: bolder;
-    color: #222;
+    color: gray;
     cursor: pointer;
+}
+
+nav > ul > li:hover{
+    color: #222;
+    transition: all 0.5s;
 }
 
 .form-btn{
