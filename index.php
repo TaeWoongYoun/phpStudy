@@ -34,6 +34,9 @@
                             <li>소개</li>
                             <li>이야기</li>
                             <li>쇼핑몰 일정</li>
+                            <li><a href='introduce.php'>소개</a></li>
+                            <li><a href='story.php'>이야기</a></li>
+                            <li><a href='schedule.php'>쇼핑몰 일정</a></li>
                             <li><a href='check.php'>도서 조회</a></li>
                         ";
                     }
