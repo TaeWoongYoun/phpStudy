@@ -8,3 +8,8 @@
     $sql = "INSERT INTO user (id, name, pw) VALUES ('$userid', '$name', '$password')";
     mysqli_query($conn, $sql);
 ?>
+
+<script>
+    alert('회원가입 완료')
+    location.href = 'index.php'
+</script>

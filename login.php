@@ -35,7 +35,7 @@
             echo "
             <script>
                 alert('일반회원으로 로그인 되었습니다.')
-                location.href='index.php'
+                location.href='index.php?id=$id'
             </script>
             ";
         } else{

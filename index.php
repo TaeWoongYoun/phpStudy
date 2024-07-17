@@ -53,6 +53,8 @@
                     if ($row = mysqli_fetch_assoc($result)) {
                         echo "{$row['name']}님 환영합니다.";
                     }
+                } else {
+                    echo "Welcome to BookMarket page";
                 }
             ?></h3>
             <p>현재 접속 시간 : <?= date("H:i:s") ?></p>
@@ -87,4 +89,3 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-

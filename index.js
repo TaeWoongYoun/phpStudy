@@ -73,8 +73,8 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        if (pw.value.length < 8 || pw.value.length > 16) {
-            alert('비밀번호를 8자 이상 16자 이하로 입력해주세요.');
+        if (pw.value.length < 4 || pw.value.length > 16) {
+            alert('비밀번호를 4자 이상 16자 이하로 입력해주세요.');
             pw.focus();
             event.preventDefault();
             return;
