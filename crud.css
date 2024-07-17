@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+li > a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul li{
+    padding-left: 0;
+    list-style: none;
+}
+
+header{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 150px;
+    height: 100%;
+}
+
+.logo button{
+    border: none;
+    background-color: #fff;
+}
+
+.logo button:nth-child(1){
+    padding-left: 20px;
+}
+.logo button:nth-child(2){
+    padding-left: 10px;
+    font-size: 24px;
+}
+
+nav{
+    width: 800px;
+    height: 100%;
+    display: flex;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+}
+
+nav > ul > li{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bolder;
+    color: #222;
+    cursor: pointer;
+}
+
+.form-btn{
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.login, .join, .logout, .message{
+    padding: 5px 10px;
+    border: none;
+    font-size: 18px;
+    background-color: #fff;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+.login:hover, .join:hover, .logout:hover, .message:hover{
+    transition: all 0.5s;
+    color: black;
+}
+
+.line{
+    width: 1.5px;
+    height: 20px;
+    background-color: gray;
+}
+
+
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid black;
+}
+
+footer p{
+    padding-left: 20px;
+    line-height: 49px;
+}
