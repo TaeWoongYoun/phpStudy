@@ -19,13 +19,12 @@
             <button type="button">Home</button>
         </div>
         <nav>
-
             <ul>
                 <?php
-                    if (isset($_GET['id']) === 'admin' || isset($_GET['id']) === 'manager') {
+                    if (isset($_GET['id']) && ($_GET['id'] === 'admin' || $_GET['id'] === 'manager')) {
                         echo "
-                            <li><a href='insert.php'>도서 입력</a></li>
-                            <li><a href='select.php'>도서 조회</a></li>
+                            <li><a href='create.php'>도서 입력</a></li>
+                            <li><a href='read.php'>도서 조회</a></li>
                             <li><a href='update.php'>도서 수정</a></li>
                             <li><a href='delete.php'>도서 삭제</a></li>
                         ";

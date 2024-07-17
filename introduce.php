@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>introduce page</title>
+    <title>read page</title>
     <link rel="stylesheet" href="crud.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
@@ -59,28 +59,7 @@
     </header>
     
     <div class="content">
-        <table>
-            <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Title</th>
-                <th scope="col">Name</th>
-                <th scope="col">Date</th>
-            </tr>
-            
-                <?php
-                    $sql = "SELECT * FROM book";
-                    $result = mysqli_query($conn, $sql);
-                    while ($row = mysqli_fetch_array($result)){
-                        echo "
-                        <tr>
-                            <td>{$row['id']}</td>
-                            <td>{$row['title']}</td>
-                            <td>{$row['name']}</td>
-                            <td>{$row['date']}</td>
-                        </tr>";
-                    }
-                ?>
-        </table>
+        <h4 style="text-align: center;">우리 BookMarket은 최고의 도서 품질을 자랑하며 <br>최신 도서를 모두 보유하고 있습니다.</h4>
     </div>
 
     <footer>
