@@ -10,7 +10,13 @@
 </head>
 <body>
     <header>
-        <a href="index.php">
+        <?php
+            if (isset($_GET['id'])){
+                echo "<a href='index.php?id={$_GET['id']}'>";
+            } else {
+                echo "<a href='index.php'>";
+            }
+        ?>
             <div class="btn-group logo">
                 <button type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
@@ -30,13 +36,15 @@
                             <li><a href='update.php'>도서 수정</a></li>
                             <li><a href='delete.php'>도서 삭제</a></li>
                         ";
-                    } else {
+                    } elseif(isset($_GET['id'])) {
                         echo "
                             <li><a href='introduce.php'>소개</a></li>
                             <li><a href='story.php'>이야기</a></li>
                             <li><a href='schedule.php'>쇼핑몰 일정</a></li>
                             <li><a href='check.php'>도서 조회</a></li>
                         ";
+                    } else {
+                        echo "";
                     }
                 ?>
             </ul>

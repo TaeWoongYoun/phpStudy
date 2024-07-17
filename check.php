@@ -10,7 +10,13 @@
 </head>
 <body>
     <header>
-        <a href="index.php">
+        <?php
+            if (isset($_GET['id'])){
+                echo "<a href='index.php?id={$_GET['id']}'>";
+            } else {
+                echo "<a href='index.php'>";
+            }
+        ?>
             <div class="btn-group logo">
                 <button type="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
