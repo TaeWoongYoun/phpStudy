@@ -92,7 +92,31 @@ nav > ul > li{
     background-color: gray;
 }
 
+.content{
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
+table{
+    width: 700px;
+    border-collapse: collapse;
+}
+
+tr > th, tr > td{
+    height: 40px;
+    border: 1px solid black;
+    vertical-align: top;
+    vertical-align: bottom;
+    vertical-align: middle;
+    text-align: center;
+}
+
+th{
+    background-color: #eee;
+}
 
 footer{
     position: absolute;
