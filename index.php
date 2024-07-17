@@ -21,14 +21,21 @@
         <nav>
 
             <ul>
-                <li>소개</li>
-                <li>이야기</li>
-                <li>쇼핑몰 일정</li>
                 <?php
                     if (isset($_GET['id']) === 'admin' || isset($_GET['id']) === 'manager') {
-                        echo "<li><a href='manegement.php'>도서 관리</a></li>";
+                        echo "
+                            <li><a href='insert.php'>도서 입력</a></li>
+                            <li><a href='select.php'>도서 조회</a></li>
+                            <li><a href='update.php'>도서 수정</a></li>
+                            <li><a href='delete.php'>도서 삭제</a></li>
+                        ";
                     } else {
-                        echo "<li><a href='read.php'>도서 조회</a></li>";
+                        echo "
+                            <li>소개</li>
+                            <li>이야기</li>
+                            <li>쇼핑몰 일정</li>
+                            <li><a href='check.php'>도서 조회</a></li>
+                        ";
                     }
                 ?>
             </ul>
