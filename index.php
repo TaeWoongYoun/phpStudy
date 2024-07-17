@@ -18,6 +18,21 @@
             </button>
             <button type="button">Home</button>
         </div>
+        <nav>
+
+            <ul>
+                <li>소개</li>
+                <li>이야기</li>
+                <li>쇼핑몰 일정</li>
+                <?php
+                    if (isset($_GET['id']) == 'admin' || isset($_GET['id']) == 'manager') {
+                        echo "<li><a href='manegement.php'>도서 관리</a></li>";
+                    } else {
+                        echo "<li><a href='read.php'>도서 조회</a></li>";
+                    }
+                ?>
+            </ul>
+        </nav>
         <div class="btn-group form-btn">
         <?php
                 if (isset($_GET['id'])) {
