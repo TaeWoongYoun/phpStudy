@@ -36,17 +36,17 @@ header{
     padding-right: 20px;
 }
 
-.login, .join{
-    width: 70px;
-    height: 35px;
+.login, .join, .logout, .message{
+    padding: 5px 10px;
     border: none;
     font-size: 18px;
     background-color: #fff;
     color: gray;
     font-weight: bold;
+    text-align: center;
 }
 
-.login:hover, .join:hover{
+.login:hover, .join:hover, .logout:hover, .message:hover{
     transition: all 0.5s;
     color: black;
 }
@@ -55,7 +55,6 @@ header{
     width: 1.5px;
     height: 20px;
     background-color: gray;
-    margin-top: 5px;
 }
 
 .content{

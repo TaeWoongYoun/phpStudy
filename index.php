@@ -19,12 +19,23 @@
             <button type="button">Home</button>
         </div>
         <div class="btn-group form-btn">
-            <button class="login">Login</button>
-            <div class="line"></div>
-            <button class="join">Join</button>
+        <?php
+                if (isset($_GET['id'])) {
+                    echo "
+                    <a href='index.php' style='text-decoration: none; color: inherit;'>
+                        <button class='logout'>로그아웃</button>
+                    </a>        
+                    <div class='line'></div>
+                    <button class='message'>알림</button>";
+                } else {
+                    echo "        
+                    <button class='login'>로그인</button>
+                    <div class='line'></div>
+                    <button class='join'>회원가입</button>";
+                }
+            ?>
         </div>
     </header>
-
     <div class="content">
         <div class="textBox">
             <h1>도서 쇼핑몰에 오신 것을 환영합니다.</h1>
@@ -34,7 +45,16 @@
 
     <section>
         <div class="textBox2">
-            <h3>Welcome to my Book Market</h3>
+            <h3><?php
+                if (isset($_GET['id'])) {
+                    $id = mysqli_real_escape_string($conn, $_GET['id']);
+                    $sql = "SELECT * FROM user WHERE id = '$id'";
+                    $result = mysqli_query($conn, $sql);
+                    if ($row = mysqli_fetch_assoc($result)) {
+                        echo "{$row['name']}님 환영합니다.";
+                    }
+                }
+            ?></h3>
             <p>현재 접속 시간 : <?= date("H:i:s") ?></p>
         </div>
     </section>
