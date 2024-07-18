@@ -40,19 +40,32 @@
     </nav>
     <div class="btn-group form-btn">
     <?php
-            if (isset($_GET['id'])) {
-                echo "
-                <a href='index.php' style='text-decoration: none; color: inherit;'>
-                    <button class='logout'>로그아웃</button>
-                </a>        
-                <div class='line'></div>
-                <button class='message'>알림</button>";
-            } else {
+            if (isset($_GET['id']) && $_GET['id'] == 'admin') {
                 echo "        
-                <button class='login'>로그인</button>
-                <div class='line'></div>
-                <button class='join'>회원가입</button>";
+                    <a href='index.php' style='text-decoration: none; color: inherit;'>
+                            <button class='logout'>로그아웃</button>
+                    </a> 
+                    <div class='line'></div>
+                    <button class='member'>회원관리</button>";
+                } elseif (isset($_GET['id'])) {
+                    echo "
+                        <a href='index.php' style='text-decoration: none; color: inherit;'>
+                            <button class='logout'>로그아웃</button>
+                        </a>        
+                        <div class='line'></div>
+                        <button class='message'>알림</button>";
+                } else {
+                echo "        
+                    <button class='login'>로그인</button>
+                    <div class='line'></div>
+                    <button class='join'>회원가입</button>";
             }
         ?>
     </div>
 </header>
+
+<script>
+    document.querySelector('.message').addEventListener('click', () =>{
+        alert('알림이 없습니다')
+    })
+</script>
