@@ -30,7 +30,7 @@
                 <th scope="col">Name</th>
                 <th scope="col">Date</th>
             </tr>
-            <form action="update_process" method="post">
+            <form action="update_process.php" method="post">
                 <tr class="updateTR">
                     <input type="hidden" name="id" value="<?= $row['id']?>">
                     <td style='width: 50px;'><?= $row['id']?></td>
