@@ -67,5 +67,10 @@
                 event.preventDefault();
             }
         });
+
+        const message = document.querySelector('.message');
+        message.addEventListener('click', () =>{
+            alert('알림이 없습니다.')
+        })
     });
 </script>
