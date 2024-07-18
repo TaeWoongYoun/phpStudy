@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>read page</title>
+    <title>쇼핑몰 일정</title>
     <link rel="stylesheet" href="crud.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
@@ -30,13 +30,14 @@
             <ul>
                 <?php
                     if (isset($_GET['id']) && ($_GET['id'] == 'admin' || $_GET['id'] == 'manager')) {
+                        $id = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
                         echo "
-                            <li><a href='create.php'>도서 입력</a></li>
-                            <li><a href='read.php'>도서 조회</a></li>
-                            <li><a href='update.php'>도서 수정</a></li>
-                            <li><a href='delete.php'>도서 삭제</a></li>
+                            <li><a href='create.php?id={$id}'>도서 입력</a></li>
+                            <li><a href='read.php?id={$id}'>도서 조회</a></li>
+                            <li><a href='update.php?id={$id}'>도서 수정</a></li>
+                            <li><a href='delete.php?id={$id}'>도서 삭제</a></li>
                         ";
-                    } elseif (isset($_GET['id']) && !empty($_GET['id'])) {
+                    } elseif (isset($_GET['id'])) {
                         $id = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
                         echo "
                             <li><a href='introduce.php?id={$id}'>소개</a></li>
