@@ -123,7 +123,7 @@ th{
     background-color: #eee;
 }
 
-.createTR input[type='text']{
+.createTR input[type='text'], .updateTR input[type='text']{
     width: 95%;
     height: 90%;
     border-radius: 10px;
