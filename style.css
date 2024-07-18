@@ -236,12 +236,14 @@ footer p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 900px;
-    height: 500px;
+    width: 950px;
+    height: 550px;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px gray;
-    display: none;
+    padding: 10px;
+    /* overflow: hidden; */
+    /* display: none; */
 }
 
 .modal_head{
@@ -250,7 +252,39 @@ footer p{
     height: 50px;
 }
 
+.modal_head h5{
+    padding: 10px;
+    font-weight: bolder;
+}
+
 .modal_head svg{
     position: absolute;
     right: 0;
+    top: 0;
+}
+
+.member_content{
+    padding-top: 70px;
+    width: 100%;
+    height: 450px;
+    overflow-y: auto;
+}
+
+.member_table{
+    margin: 0 auto;
+    width: 900px;
+    height: 300;
+}
+
+.member_table th, .member_table td{
+    border: 1px solid black;
+    vertical-align: top;
+    vertical-align: middle;
+    vertical-align: bottom;
+    text-align: center;
+    line-height: 30px;
+}
+
+.member_table th{
+    background-color: rgb(228, 240, 250);
 }

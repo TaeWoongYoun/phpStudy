@@ -65,10 +65,54 @@
 
     <div class="member_modal">
         <div class="modal_head">
+            <h5>회원관리 테이블</h5>
             <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-x-square close" viewBox="0 0 16 16">
                 <path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"/>
                 <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
             </svg>
+            <div class="member_content">
+                <table class="member_table">
+                    <tr>
+                        <th style="width: 50px;">ID</th>
+                        <th style="width: 150px;">User_ID</th>
+                        <th style="width: 200px;">Password</th>
+                        <th style="width: 150px;">Name</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>admin</td>
+                        <td>1234</td>
+                        <td>관리자</td>
+                        <td style="width: 75px;"><button>수정</button></td>
+                        <td style="width: 75px;"><button>삭제</button></td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>admin</td>
+                        <td>1234</td>
+                        <td>관리자</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>admin</td>
+                        <td>1234</td>
+                        <td>관리자</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>admin</td>
+                        <td>1234</td>
+                        <td>관리자</td>
+                    </tr>
+                </table>
+                <!-- <?php
+                    $sql = "SELECT * FROM user";
+                    $result = mysqli_query($conn, $sql);
+                    while ($row = mysqli_fetch_array($result)){
+
+                    }
+                ?> -->
+            </div>
         </div>
     </div>    
 
