@@ -37,9 +37,9 @@
                 <form action="create_process.php" method="post">
                     <tr class="createTR">
                         <td>자동</td>
-                        <td><input type="text" placeholder="Title"></td>
-                        <td><input type="text" placeholder="Name"></td>
-                        <td><input type="text" placeholder="Date"></td>
+                        <td><input type="text" name="title" placeholder="Title"></td>
+                        <td><input type="text" name="name" placeholder="Name"></td>
+                        <td><input type="text" name="date" placeholder="Date"></td>
                         <td><input type="submit" value="제출"></td>
                     </tr>
                 </form>
