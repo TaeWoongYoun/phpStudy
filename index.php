@@ -36,7 +36,7 @@
                             <li><a href='update.php'>도서 수정</a></li>
                             <li><a href='delete.php'>도서 삭제</a></li>
                         ";
-                    } elseif (isset($_GET['id']) && !empty($_GET['id'])) {
+                    } elseif (isset($_GET['id'])) {
                         $id = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
                         echo "
                             <li><a href='introduce.php?id={$id}'>소개</a></li>
