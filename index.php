@@ -9,11 +9,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 <body>
-    
+
     <?php 
         require('./lib/header.php')
     ?>
-
+    
     <div class="content">
         <div class="textBox">
             <h1>도서 쇼핑몰에 오신 것을 환영합니다.</h1>

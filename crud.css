@@ -98,7 +98,7 @@ nav > ul > li:hover{
 }
 
 .content{
-    width: 700px;
+    width: 900px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -106,7 +106,6 @@ nav > ul > li:hover{
 }
 
 table{
-    width: 700px;
     border-collapse: collapse;
 }
 
@@ -121,6 +120,20 @@ tr > th, tr > td{
 
 th{
     background-color: #eee;
+}
+
+.createTR input[type='text']{
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+
+.createTR input[type='submit']{
+    width: 90px;
+    height: 40px;
+    border: none;
 }
 
 .calender{
