@@ -106,6 +106,7 @@ nav > ul > li:hover{
 }
 
 table{
+    margin: 0 auto;
     border-collapse: collapse;
 }
 
@@ -131,7 +132,7 @@ th{
 }
 
 .createTR input[type='submit']{
-    width: 90px;
+    width: 100px;
     height: 40px;
     border: none;
 }

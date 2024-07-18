@@ -29,10 +29,10 @@
                     while ($row = mysqli_fetch_array($result)){
                         echo "
                         <tr>
-                            <td>{$row['id']}</td>
-                            <td>{$row['title']}</td>
-                            <td>{$row['name']}</td>
-                            <td>{$row['date']}</td>
+                            <td style='width: 50px;'>{$row['id']}</td>
+                            <td style='width: 250px;'>{$row['title']}</td>
+                            <td style='width: 250px;'>{$row['name']}</td>
+                            <td style='width: 250px;'>{$row['date']}</td>
                         </tr>";
                     }
                 ?>
