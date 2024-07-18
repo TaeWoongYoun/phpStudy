@@ -29,21 +29,22 @@
         <nav>
             <ul>
                 <?php
-                    if (isset($_GET['id']) == 'admin' || isset($_GET['id']) == 'manager') {
+                    if (isset($_GET['id']) && ($_GET['id'] == 'admin' || $_GET['id'] == 'manager')) {
                         echo "
                             <li><a href='create.php'>도서 입력</a></li>
                             <li><a href='read.php'>도서 조회</a></li>
                             <li><a href='update.php'>도서 수정</a></li>
                             <li><a href='delete.php'>도서 삭제</a></li>
                         ";
-                    } else {
+                    } elseif (isset($_GET['id']) && !empty($_GET['id'])) {
+                        $id = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
                         echo "
-                            <li><a href='introduce.php'>소개</a></li>
-                            <li><a href='story.php'>이야기</a></li>
-                            <li><a href='schedule.php'>쇼핑몰 일정</a></li>
-                            <li><a href='check.php'>도서 조회</a></li>
+                            <li><a href='introduce.php?id={$id}'>소개</a></li>
+                            <li><a href='story.php?id={$id}'>이야기</a></li>
+                            <li><a href='schedule.php?id={$id}'>쇼핑몰 일정</a></li>
+                            <li><a href='check.php?id={$id}'>도서 조회</a></li>
                         ";
-                    }
+                    } else {}
                 ?>
             </ul>
         </nav>
