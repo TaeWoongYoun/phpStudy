@@ -137,6 +137,12 @@ th{
     border: none;
 }
 
+.update_submit{
+    width: 100px;
+    height: 40px;
+    border: none;
+}
+
 .calender{
     margin: auto;
     width: 500px;
