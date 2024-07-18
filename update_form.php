@@ -35,8 +35,8 @@
                     <input type="hidden" name="id" value="<?= $row['id']?>">
                     <td style='width: 50px;'><?= $row['id']?></td>
                     <td style='width: 250px;'><input type="text" name="title" value="<?=  $row['title']?>"></td>
-                    <td style='width: 250px;'><input type="text" name="name" value="<?=  $row['date']?>"></td>
-                    <td style='width: 250px;'><input type="text" name="date" value="<?=  $row['name']?>"></td>
+                    <td style='width: 250px;'><input type="text" name="name" value="<?=  $row['name']?>"></td>
+                    <td style='width: 250px;'><input type="text" name="date" value="<?=  $row['date']?>"></td>
                     <td><input type="submit" value="수정" class="update_submit"></td>
                 </tr>
             </form>

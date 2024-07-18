@@ -52,8 +52,8 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        if (name.value.length < 4 || name.value.length > 12) {
-            alert('이름을 4자 이상 12자 이하로 입력해주세요.');
+        if (name.value.length < 2 || name.value.length > 12) {
+            alert('이름을 2자 이상 12자 이하로 입력해주세요.');
             name.focus();
             event.preventDefault();
             return;
