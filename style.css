@@ -241,6 +241,7 @@ footer p{
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 0 0 10px gray;
+    display: none;
 }
 
 .modal_head{
