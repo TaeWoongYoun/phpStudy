@@ -6,6 +6,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const login_form = document.querySelector('.login_form');
     const login = document.querySelector('.login');
     const login_reset = document.querySelector('.login_reset');
+    const member = document.querySelector('.member');
+    const member_modal = document.querySelector('.member_modal');
+    const close = document.querySelector('.close');
 
     join.addEventListener('click', () =>{
         join_form.style.display = 'block'
@@ -80,4 +83,12 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
     });
+
+    member.addEventListener('click', () => {
+        member_modal.style.display = 'block'
+    })
+
+    close.addEventListener('click', () => {
+        member_modal.style.display = 'none'
+    })
 })
