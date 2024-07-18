@@ -24,7 +24,7 @@
                             <li><a href='create.php?id={$id}'>도서 추가</a></li>
                             <li><a href='read.php?id={$id}'>도서 조회</a></li>
                             <li><a href='update.php?id={$id}'>도서 수정</a></li>
-                            <li><a href='delete.php?id={$id}'>도서 삭제</a></li>
+                            <li class='delete-link'><a href='delete.php?id={$id}'>도서 삭제</a></li>
                         ";
                     } elseif (isset($_GET['id'])) {
                         $id = htmlspecialchars($_GET['id'], ENT_QUOTES, 'UTF-8');
@@ -56,3 +56,16 @@
             ?>
         </div>
     </header>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var userId = 'manager';
+        var deleteLink = document.querySelector('.delete-link');
+        deleteLink.addEventListener('click', function(event) {
+            if (userId === 'manager') {
+                alert('관리자 권한이 필요합니다.');
+                event.preventDefault();
+            }
+        });
+    });
+</script>
