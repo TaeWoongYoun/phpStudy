@@ -137,7 +137,7 @@ th{
     border: none;
 }
 
-.update_submit{
+.update_submit, .delete_submit{
     width: 100px;
     height: 40px;
     border: none;
