@@ -31,7 +31,10 @@
                         <td style='width: 250px;'>{$row['title']}</td>
                         <td style='width: 250px;'>{$row['name']}</td>
                         <td style='width: 250px;'>{$row['date']}</td>
-                        <td><a href='delete_process.php?id={$row['id']}'><input type='submit' value='삭제' class='delete_submit'></a></td>
+                        <form action='delete_process.php' method='post'>
+                            <input type='hidden' name='id' value='{$row['id']}'>
+                            <td><input type='submit' value='삭제' class='delete_submit'></td>
+                        </form>
                     </tr>";
                 }
             ?>
