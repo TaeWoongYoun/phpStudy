@@ -264,7 +264,7 @@ footer p{
 }
 
 .member_content{
-    padding-top: 70px;
+    padding-top: 50px;
     width: 100%;
     height: 450px;
     overflow-y: auto;
@@ -278,13 +278,41 @@ footer p{
 
 .member_table th, .member_table td{
     border: 1px solid black;
-    vertical-align: top;
-    vertical-align: middle;
-    vertical-align: bottom;
     text-align: center;
     line-height: 30px;
 }
 
 .member_table th{
     background-color: rgb(228, 240, 250);
+}
+
+.member_btn{
+    height: 30px;
+    border: none;
+    background-color: rgb(228, 240, 250);
+}
+
+.member_create{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background: rgb(228, 240, 250);
+}
+
+.update_cell{
+    display: none;
+}
+
+.update_cell input[type='text']{
+    width: 95%;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.update_cell input[type='submit']{
+    width: 60px;
+    line-height: 25px;
+    border: 1px solid black;
 }

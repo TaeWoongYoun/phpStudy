@@ -74,48 +74,39 @@
                 <table class="member_table">
                     <tr>
                         <th style="width: 50px;">ID</th>
-                        <th style="width: 150px;">User_ID</th>
-                        <th style="width: 200px;">Password</th>
-                        <th style="width: 150px;">Name</th>
+                        <th style="width: 200px;">User_ID</th>
+                        <th style="width: 250px;">Password</th>
+                        <th style="width: 200px;">Name</th>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>admin</td>
-                        <td>1234</td>
-                        <td>관리자</td>
-                        <td style="width: 75px;"><button>수정</button></td>
-                        <td style="width: 75px;"><button>삭제</button></td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>admin</td>
-                        <td>1234</td>
-                        <td>관리자</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>admin</td>
-                        <td>1234</td>
-                        <td>관리자</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>admin</td>
-                        <td>1234</td>
-                        <td>관리자</td>
-                    </tr>
-                </table>
-                <!-- <?php
+                <?php
                     $sql = "SELECT * FROM user";
                     $result = mysqli_query($conn, $sql);
                     while ($row = mysqli_fetch_array($result)){
-
+                        echo "
+                        <tr>
+                            <td>{$row['emp_id']}</td>
+                            <td>{$row['id']}</td>
+                            <td>{$row['pw']}</td>
+                            <td>{$row['name']}</td>
+                            <td style='width: 75px;'><button class='member_btn edit_btn' data-id='{$row['emp_id']}' style='width: 100%;'>수정</button></td>
+                            <td style='width: 75px;'><button class='member_btn' style='width: 100%;'>삭제</button></td>
+                        </tr>
+                        <tr class='update_cell' id='cell_{$row['emp_id']}'>
+                            <form action='member_update' method='post'>
+                                <input type='hidden' name='emp_id' value='{$row['emp_id']}'>
+                                <td>{$row['emp_id']}</td>
+                                <td><input type='text' name='id' value='{$row['id']}' placeholder='new_id'></td>
+                                <td><input type='text' name='pw' value='{$row['pw']}' placeholder='new_password'></td>
+                                <td><input type='text' name='name' value='{$row['name']}' placeholder='new_name'></td>
+                                <td><input type='submit' value='수정'></td>
+                            </form>
+                        </tr>";
                     }
-                ?> -->
+                ?>
+                </table>
             </div>
         </div>
-    </div>    
-
+    </div>
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

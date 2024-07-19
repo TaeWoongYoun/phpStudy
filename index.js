@@ -106,3 +106,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const edit_btn = document.querySelectorAll('.edit_btn');
+    
+    edit_btn.forEach(button => {
+        button.addEventListener('click', function() {
+            const empId = this.dataset.id;
+            const updateRow = document.getElementById(`cell_${empId}`);
+            if (updateRow.style.display === 'none') {
+                updateRow.style.display = 'table-row';
+            } else {
+                updateRow.style.display = 'none';
+            }
+        });
+    });
+});
