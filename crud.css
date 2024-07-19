@@ -69,14 +69,14 @@ nav > ul > li:hover{
 }
 
 .form-btn{
-    width: 200px;
+    width: 220px;
     height: 100%;
     display: flex;
     align-items: center;
     padding-right: 20px;
 }
 
-.login, .join, .logout, .message{
+.login, .join, .logout, .message, .member{
     padding: 5px 10px;
     border: none;
     font-size: 18px;
@@ -86,7 +86,7 @@ nav > ul > li:hover{
     text-align: center;
 }
 
-.login:hover, .join:hover, .logout:hover, .message:hover{
+.login:hover, .join:hover, .logout:hover, .message:hover, .member:hover{
     transition: all 0.5s;
     color: black;
 }
