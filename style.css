@@ -242,8 +242,7 @@ footer p{
     background-color: #fff;
     box-shadow: 0 0 10px gray;
     padding: 10px;
-    /* overflow: hidden; */
-    /* display: none; */
+    display: none;
 }
 
 .modal_head{

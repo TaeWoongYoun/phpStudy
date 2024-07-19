@@ -92,7 +92,7 @@
                             <td style='width: 75px;'><button class='member_btn' style='width: 100%;'>삭제</button></td>
                         </tr>
                         <tr class='update_cell' id='cell_{$row['emp_id']}'>
-                            <form action='member_update' method='post'>
+                            <form action='member_update.php' method='post'>
                                 <input type='hidden' name='emp_id' value='{$row['emp_id']}'>
                                 <td>{$row['emp_id']}</td>
                                 <td><input type='text' name='id' value='{$row['id']}' placeholder='new_id'></td>
