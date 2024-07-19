@@ -89,7 +89,10 @@
                             <td>{$row['pw']}</td>
                             <td>{$row['name']}</td>
                             <td style='width: 75px;'><button class='member_btn edit_btn' data-id='{$row['emp_id']}' style='width: 100%;'>수정</button></td>
-                            <td style='width: 75px;'><button class='member_btn' style='width: 100%;'>삭제</button></td>
+                            <form action='member_delete.php' method='post'>
+                                <input type='hidden' name='emp_id' value='{$row['emp_id']}'>
+                                <td style='width: 75px;'><input type='submit' class='member_btn' style='width: 100%;' value='삭제'></input></td>
+                            </form>                        
                         </tr>
                         <tr class='update_cell' id='cell_{$row['emp_id']}'>
                             <form action='member_update.php' method='post'>
@@ -107,6 +110,7 @@
             </div>
         </div>
     </div>
+
     <script src="index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
